@@ -82,23 +82,21 @@ https://github.com/2771618309/Analytical-Federated-Learning-for-Scalable-NILM/as
 
 *Video demonstrates: hardware setup, platform configuration, dual-device parallel training, and real-time results*
 
-> **Note**: Video file is 195MB. Download from [assets folder](stm32_deployment/assets/stm32_deployment_demo.mp4) or watch after uploading to YouTube/Bilibili.
+> **Note**: Video file is 195MB. Download from [assets folder](stm32_deployment/assets/stm32_deployment_demo.mp4).
 
 ### 3. Data Simulation Parameters ✅
 - **Location**: [`data_simulation/`](data_simulation/)
 - **Description**: Comprehensive simulation parameters and topology configurations for generating synthetic load data
 - **Contents**:
-  - `simulation_load_parameters.pdf` - Detailed electrical parameters and circuit topologies
-  - `simulation_load_parameters.xlsx` - Editable parameter tables
+- `simulation_load_parameters.pdf` - Electrical parameters and simulation configurations for various load types
+- `simulation_load_parameters.xlsx` - Editable parameter tables
   - `assets/` - Circuit topology diagrams and configuration illustrations
 - **Documentation**: See [Data Simulation README](data_simulation/README.md)
 
 **Simulated Load Topologies:**
 
 ![Load Topologies Overview](data_simulation/assets/Overview%20of%20simulated%20load%20topologies%20and%20number%20of%20cases.jpg)
-*Overview of simulated appliance types and case distributions used in federated learning experiments*
 
-The simulation parameters cover diverse appliance categories (resistive, inductive, capacitive, and electronic loads) with realistic variations to validate the analytical federated learning framework under heterogeneous data distributions.
 
 ## ⏳ Full Code Release Plan
 
@@ -108,12 +106,10 @@ Upon paper acceptance, this repository will be updated with the following compon
 - Closed-form solution for local updates
 - Gram matrix computation algorithms
 - Cloud-side aggregation procedures
-- Convergence analysis tools
 
 ### 2. **Pre-trained Shared Feature Extractor**
 - Model architecture and weights
-- Training and fine-tuning scripts
-- Transfer learning utilities
+- Training scripts
 
 ### 3. **STM32 Embedded Firmware** 
 - C implementation optimized for embedded systems

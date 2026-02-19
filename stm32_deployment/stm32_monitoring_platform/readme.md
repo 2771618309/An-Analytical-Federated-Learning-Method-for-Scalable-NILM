@@ -10,7 +10,7 @@ This monitoring platform implements the hardware deployment experiments describe
 
 The complete deployment demonstration showing hardware setup, dual-device training, and real-time monitoring.
 
-> **Note**: Due to the large file size (195MB), the video is provided as a download link. It will be uploaded to YouTube/Bilibili after paper acceptance for easier viewing.
+> **Note**: Due to the large file size (195MB), the video is provided as a download link. 
 
 ### Key Features
 
