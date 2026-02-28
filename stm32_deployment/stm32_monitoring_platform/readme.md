@@ -80,8 +80,8 @@ pip install plotly  # For enhanced interactive visualizations
 
 ### Step 1: Clone Repository
 ```bash
-git clone https://github.com/2771618309/Analytical-Federated-Learning-for-Scalable-NILM.git
-cd Analytical-Federated-Learning-for-Scalable-NILM/stm32_deployment/stm32_monitoring_platform
+git clone https://github.com/2771618309/An-Analytical-Federated-Learning-Method-for-Scalable-NILM.git
+cd An-Analytical-Federated-Learning-Method-for-Scalable-NILM/stm32_deployment/stm32_monitoring_platform
 ```
 
 ### Step 2: Install Dependencies
@@ -257,8 +257,8 @@ If you use this platform in your research, please cite:
 
 ## Contact
 
-- **GitHub**: https://github.com/2771618309/Analytical-Federated-Learning-for-Scalable-NILM
-- **Issues**: https://github.com/2771618309/Analytical-Federated-Learning-for-Scalable-NILM/issues
+- **GitHub**: https://github.com/2771618309/An-Analytical-Federated-Learning-Method-for-Scalable-NILM
+- **Issues**: https://github.com/2771618309/An-Analytical-Federated-Learning-Method-for-Scalable-NILM/issues
 - **Email**: 2771618309@qq.com
 
 ## License

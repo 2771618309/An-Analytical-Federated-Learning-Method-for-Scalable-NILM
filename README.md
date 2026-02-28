@@ -37,7 +37,7 @@ The core implementation of the proposed analytical federated learning framework,
 ## 📋 Repository Structure (Current Release)
 
 ```
-Analytical-Federated-Learning-for-Scalable-NILM/
+An-Analytical-Federated-Learning-Method-for-Scalable-NILM/
 ├── stm32_deployment/
 │   ├── stm32_monitoring_platform/  # ✅ Web-based FL coordination platform
 │   └── assets/                     # ✅ Demo videos and screenshots
@@ -78,7 +78,7 @@ The following components are **currently available**:
 
 **Watch Demo:**
 
-https://github.com/2771618309/Analytical-Federated-Learning-for-Scalable-NILM/assets/stm32_deployment_demo.mp4
+https://github.com/2771618309/An-Analytical-Federated-Learning-Method-for-Scalable-NILM/assets/stm32_deployment_demo.mp4
 
 *Video demonstrates: hardware setup, platform configuration, dual-device parallel training, and real-time results*
 
@@ -162,8 +162,8 @@ See [Platform Documentation](stm32_deployment/stm32_monitoring_platform/readme.m
 
 ## 📧 Contact
 
-- **Repository**: [GitHub - Analytical Federated Learning for Scalable NILM](https://github.com/2771618309/Analytical-Federated-Learning-for-Scalable-NILM)
-- **Issues**: For technical questions about the available supplementary materials, please open an [issue](https://github.com/2771618309/Analytical-Federated-Learning-for-Scalable-NILM/issues)
+- **Repository**: [GitHub - Analytical Federated Learning for Scalable NILM](https://github.com/2771618309/An-Analytical-Federated-Learning-Method-for-Scalable-NILM)
+- **Issues**: For technical questions about the available supplementary materials, please open an [issue](https://github.com/2771618309/An-Analytical-Federated-Learning-Method-for-Scalable-NILM/issues)
 - **Email**: 2771618309@qq.com
 
 **Note**: We cannot provide early access to unreleased code components during the peer review period. Thank you for your understanding.
