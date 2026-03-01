@@ -6,11 +6,15 @@ This monitoring platform implements the hardware deployment experiments describe
 
 ### Demo Video
 
-📹 **[Watch Demo Video](../assets/stm32_deployment_demo.mp4)** (195MB)
-
 The complete deployment demonstration showing hardware setup, dual-device training, and real-time monitoring.
 
-> **Note**: Due to the large file size (195MB), the video is provided as a download link. 
+| Platform | Link |
+|----------|------|
+| 🐙 GitHub | [stm32_deployment_demo.mp4](https://github.com/2771618309/An-Analytical-Federated-Learning-Method-for-Scalable-NILM/assets/stm32_deployment_demo.mp4) |
+| 📺 Bilibili | [BV1mRAhzoEwt](https://www.bilibili.com/video/BV1mRAhzoEwt/) |
+| ▶️ YouTube | [youtu.be/1ytGaKk8w70](https://youtu.be/1ytGaKk8w70) |
+
+> **Note**: The GitHub video file is 195MB. If the download is slow, you can watch it online directly on [Bilibili](https://www.bilibili.com/video/BV1mRAhzoEwt/) or [YouTube](https://youtu.be/1ytGaKk8w70).
 
 ### Key Features
 
@@ -267,4 +271,4 @@ See [LICENSE](../../LICENSE) in the repository root.
 
 ---
 
-**Demo Video:** See video at the top of this README or download from [assets folder](../assets/stm32_deployment_demo.mp4).
+**Demo Video:** Watch on [GitHub](https://github.com/2771618309/An-Analytical-Federated-Learning-Method-for-Scalable-NILM/assets/stm32_deployment_demo.mp4) | [Bilibili](https://www.bilibili.com/video/BV1mRAhzoEwt/) | [YouTube](https://youtu.be/1ytGaKk8w70), or download from [assets folder](../assets/stm32_deployment_demo.mp4).

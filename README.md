@@ -78,11 +78,15 @@ The following components are **currently available**:
 
 **Watch Demo:**
 
-https://github.com/2771618309/An-Analytical-Federated-Learning-Method-for-Scalable-NILM/assets/stm32_deployment_demo.mp4
+| Platform | Link |
+|----------|------|
+| 🐙 GitHub | [stm32_deployment_demo.mp4](https://github.com/2771618309/An-Analytical-Federated-Learning-Method-for-Scalable-NILM/assets/stm32_deployment_demo.mp4) |
+| 📺 Bilibili | [BV1mRAhzoEwt](https://www.bilibili.com/video/BV1mRAhzoEwt/) |
+| ▶️ YouTube | [youtu.be/1ytGaKk8w70](https://youtu.be/1ytGaKk8w70) |
 
 *Video demonstrates: hardware setup, platform configuration, dual-device parallel training, and real-time results*
 
-> **Note**: Video file is 195MB. Download from [assets folder](stm32_deployment/assets/stm32_deployment_demo.mp4).
+> **Note**: The GitHub video file is 195MB. If the download is slow, you can watch it online directly on [Bilibili](https://www.bilibili.com/video/BV1mRAhzoEwt/) or [YouTube](https://youtu.be/1ytGaKk8w70).
 
 ### 3. Data Simulation Parameters ✅
 - **Location**: [`data_simulation/`](data_simulation/)
