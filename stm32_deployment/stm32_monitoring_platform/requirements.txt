@@ -1,0 +1,12 @@
+# STM32 Federated Learning Monitoring Platform
+# Required Dependencies
+
+# Core dependencies
+streamlit>=1.0.0
+pandas>=1.0.0
+numpy>=1.18.0
+pyserial>=3.4
+openpyxl>=3.0.0
+
+# Optional dependencies for enhanced visualization
+plotly>=4.0.0
