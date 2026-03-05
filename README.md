@@ -1,8 +1,15 @@
-# Analytical Federated Learning for Scalable NILM
+# An-Analytical-Federated-Learning-Method-for-Scalable-NILM
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.7+-green.svg)](https://www.python.org/)
 [![Status](https://img.shields.io/badge/Status-Supplementary_Material-yellow.svg)](#)
+
+---
+
+> ### ✍️ Authors
+> **Wenlong Guo**, **Tao Yu** *(Senior Member, IEEE)*, **Qingquan Luo**, **Xiaolei Hu**, **Yufeng Wu** *(Graduate Student Member, IEEE)*, and **Zhenning Pan** *(Member, IEEE)*
+
+---
 
 This repository contains the **supplementary materials** for **"An Analytical Federated Learning Framework for Scalable Non-Intrusive Load Monitoring"**.
 
