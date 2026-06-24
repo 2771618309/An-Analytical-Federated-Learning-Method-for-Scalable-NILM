@@ -6,7 +6,7 @@ echo ================================
 echo STM32 Federated Learning Monitor
 echo ================================
 echo.
-set /p PYTHON_PATH="Please enter the full path to your Python interpreter (e.g., D:\software\anaconda\envs\pytorch\python.exe): "
+set /p PYTHON_PATH="Please enter your Python command or interpreter path (e.g., python or path\to\python.exe): "
 echo.
 echo This platform requires the following libraries:
 echo - streamlit

@@ -1,0 +1,52 @@
+# Toy analytical federated config. Field names follow the original config.yaml
+# style where possible; private paths are replaced by repository-local paths.
+
+all_data_path: synthetic
+model_save_dir: analytical_nilm/outputs/pretrain/checkpoints
+model_name: patch_residual_toy.pth
+model_type: PatchResidualFeatureExtractor
+
+test_save_path: analytical_nilm/outputs/federated/test_toy.txt
+train_save_path: analytical_nilm/outputs/federated/train_toy.txt
+test_save_path_projection: analytical_nilm/outputs/federated/test_projection_toy.txt
+
+pretrained: true
+clean_reg: true
+num_classes: 6
+init_num_class: 6
+input_norm: true
+feature_scale: false
+feat_size: 120
+length: 150
+batch_size: 64
+gpu: auto
+rg: 0.5
+seed: 42
+modelseed: 2024
+num_clients: 5
+niid: true
+balance: true
+alpha: 0.1
+least_samples: 1
+print_flags: [1, 1, 0, 0]
+test_ratio: 0.2
+
+# Projection branch used by the final open-source toy flow.
+use_projection: true
+
+# Toy-only parameters used to replace private NILM data in the demo.
+synthetic: true
+num_samples: 600
+noise_std: 0.03
+
+# Configurable version of constants in the original class_model_patch.
+patch_len: 30
+patch_stride: 30
+patch_embed_dim: 30
+out_channel: 8
+conv_out_channels: 4
+hidden_dim: 128
+dropout: 0.0
+
+output_dir: analytical_nilm/outputs/federated
+save_metrics: true

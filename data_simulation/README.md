@@ -1,6 +1,6 @@
 # Data Simulation Parameters
 
-This folder contains the simulation parameters and topology configurations used to generate synthetic load data for validating the analytical federated learning framework.
+This folder contains the simulation parameters and topology configurations used to generate synthetic load data for validating the analytical federated learning method.
 
 ## 📊 Contents
 
@@ -29,4 +29,4 @@ Fig.3 Load Topology. (a) Resistor; (b) Resistive load with diode rectifier; (c) 
 
 ---
 
-**Note**: The simulation parameters are provided as supplementary material to facilitate understanding of the experimental setup during the review process.
+**Note**: The simulation parameters are provided as supplementary material to facilitate understanding of the synthetic load-generation setup used in the paper. This folder does not include raw NILM data, private household data, or Simulink source projects.

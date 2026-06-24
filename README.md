@@ -1,8 +1,8 @@
-# An-Analytical-Federated-Learning-Method-for-Scalable-NILM
+# An Analytical Federated Learning Method for Scalable NILM
 
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Python](https://img.shields.io/badge/Python-3.7+-green.svg)](https://www.python.org/)
-[![Status](https://img.shields.io/badge/Status-Supplementary_Material-yellow.svg)](#)
+[![Status](https://img.shields.io/badge/Status-Method_Implementation-green.svg)](#)
 
 ---
 
@@ -11,126 +11,123 @@
 
 ---
 
-This repository contains the **supplementary materials** for **"An Analytical Federated Learning Framework for Scalable Non-Intrusive Load Monitoring"**.
+This repository provides the released method implementation and selected supplementary materials for:
 
-Our framework solves the global-local bias issue in existing gradient-based federated methods, achieving efficient and scalable non-intrusive load monitoring with performance equivalent to centralized learning.
+**"An Analytical Federated Learning Method for Scalable Non-Intrusive Load Monitoring"**
 
----
+The proposed method addresses the global-local bias issue in gradient-based federated NILM and provides an analytical federated learning pipeline with performance aligned with centralized learning.
 
-## ⚠️ Code Availability Statement
+## ✅ Code Availability Statement
 
-**Status**: This repository currently contains **supplementary materials** only.
+This repository currently releases the **core method implementation** and selected supplementary materials.
 
-The core implementation of the proposed analytical federated learning framework, including:
-- Analytical local update algorithms
-- Pre-trained shared feature extractor models
-- STM32 embedded firmware implementation
+The released method code includes:
 
-**These components are currently withheld during the peer review process** and will be **publicly released upon paper acceptance**, in accordance with standard academic publishing practices. This ensures the protection of intellectual property while maintaining reproducibility commitments.
+- Python implementation of the shared patch-residual feature extractor pretraining pipeline.
+- Patch embedding and positional encoding modules.
+- 1D convolutional residual feature extraction backbone.
+- Cross-entropy and supervised contrastive pretraining loss.
+- Analytical local update for client-side closed-form learning.
+- Cloud-side closed-form aggregation.
+- Regularization cleanup for the aggregated analytical solution.
+- Update-branch / projection-branch analytical classifier reparameterization.
+- Synthetic toy demos that run without private NILM data.
+- Method-level STM32 C implementation for PatchResNet forward inference, local analytical update, and matrix upload helpers.
 
-### Currently Available Supplementary Materials
+This release is intended to provide the **core method implementation**, not a full reproduction package for all paper tables.
 
-✅ **STM32 Monitoring Platform** ([`stm32_deployment/stm32_monitoring_platform/`](stm32_deployment/stm32_monitoring_platform/))  
-   Web-based coordination interface for hardware federated learning experiments
+The repository does **not** include raw data, private household data, data split files, complete experiment reproduction scripts, baseline implementations, paper-table reproduction commands, training logs, private checkpoints, real deployment weights, company product code, or a complete Keil/STM32CubeIDE firmware project.
 
-✅ **Demo Video & Screenshots** ([`stm32_deployment/assets/`](stm32_deployment/assets/))  
-   Complete hardware deployment demonstration (dual-device setup and training)
+## 📦 Currently Available Materials
 
-✅ **Data Simulation Parameters** ([`data_simulation/`](data_simulation/))  
-   Circuit topologies, electrical parameters, and configurations for synthetic load generation
+### ✅ Analytical NILM Method Implementation
 
----
+- **Location**: [`analytical_nilm/`](analytical_nilm/)
+- **Description**: Python implementation of the shared feature extractor pretraining and analytical federated learning pipeline with synthetic toy demos.
+- **Documentation**: See [`analytical_nilm/README.md`](analytical_nilm/README.md).
 
-## 📋 Repository Structure (Current Release)
+### ✅ STM32 Embedded Method Implementation
 
-```
-An-Analytical-Federated-Learning-Method-for-Scalable-NILM/
-├── stm32_deployment/
-│   ├── stm32_monitoring_platform/  # ✅ Web-based FL coordination platform
-│   └── assets/                     # ✅ Demo videos and screenshots
-├── data_simulation/                # ✅ Simulation parameters & load topologies
-│   ├── simulation_load_parameters.pdf
-│   ├── simulation_load_parameters.xlsx
-│   └── assets/                     # Circuit topology diagrams
-├── LICENSE
-└── README.md
-```
+- **Location**: [`stm32_deployment/embedded_method/`](stm32_deployment/embedded_method/)
+- **Description**: Method-level C implementation for STM32-side deployment, including PatchResNet forward inference, edge-side analytical update, and block-wise matrix upload helpers.
+- **Documentation**: See [`stm32_deployment/embedded_method/README.md`](stm32_deployment/embedded_method/README.md).
+- **Scope**: This is not a complete firmware project and does not include real model weights.
 
-**Legend**: ✅ = Currently available | The checkmark indicates supplementary materials provided during review phase.
+### ✅ STM32 Monitoring Platform
 
-**Note**: Core algorithm implementations (analytical FL framework, pre-trained models, and STM32 firmware) will be added to this repository upon paper acceptance.
-
-## 🚀 Current Release (Pre-Acceptance)
-
-The following components are **currently available**:
-
-### 1. STM32 Monitoring Platform ✅
 - **Location**: [`stm32_deployment/stm32_monitoring_platform/`](stm32_deployment/stm32_monitoring_platform/)
-- **Description**: Web-based platform for coordinating and monitoring federated learning across multiple STM32 edge devices
-- **Features**:
-  - Real-time training progress visualization
-  - Dual-device parallel coordination
-  - Simulation mode (no hardware required)
-  - Bilingual interface (Chinese/English)
-- **Documentation**: See [Platform README](stm32_deployment/stm32_monitoring_platform/readme.md)
+- **Description**: Web-based coordination interface for hardware federated learning experiments.
+- **Documentation**: See [`stm32_deployment/stm32_monitoring_platform/readme.md`](stm32_deployment/stm32_monitoring_platform/readme.md).
 
-**Platform Screenshot:**
+### 🎬 Demo Video and Screenshots
 
-![STM32 Monitoring Platform](stm32_deployment/assets/platform_interface.jpeg)
-*Real-time monitoring interface showing dual-device federated learning progress*
-
-### 2. Demo Video ✅
 - **Location**: [`stm32_deployment/assets/`](stm32_deployment/assets/)
-- **Content**: Complete hardware deployment demonstration showing dual-device federated learning
-
-**Watch Demo:**
+- **Content**: Hardware deployment demonstration with a dual-device setup.
 
 | Platform | Link |
-|----------|------|
+| --- | --- |
 | 🐙 GitHub | [stm32_deployment_demo.mp4](https://github.com/2771618309/An-Analytical-Federated-Learning-Method-for-Scalable-NILM/assets/stm32_deployment_demo.mp4) |
 | 📺 Bilibili | [BV1mRAhzoEwt](https://www.bilibili.com/video/BV1mRAhzoEwt/) |
 | ▶️ YouTube | [youtu.be/1ytGaKk8w70](https://youtu.be/1ytGaKk8w70) |
 
-*Video demonstrates: hardware setup, platform configuration, dual-device parallel training, and real-time results*
+### ✅ Data Simulation Parameters
 
-> **Note**: The GitHub video file is 195MB. If the download is slow, you can watch it online directly on [Bilibili](https://www.bilibili.com/video/BV1mRAhzoEwt/) or [YouTube](https://youtu.be/1ytGaKk8w70).
-
-### 3. Data Simulation Parameters ✅
 - **Location**: [`data_simulation/`](data_simulation/)
-- **Description**: Comprehensive simulation parameters and topology configurations for generating synthetic load data
-- **Contents**:
-- `simulation_load_parameters.pdf` - Electrical parameters and simulation configurations for various load types
-- `simulation_load_parameters.xlsx` - Editable parameter tables
-  - `assets/` - Circuit topology diagrams and configuration illustrations
-- **Documentation**: See [Data Simulation README](data_simulation/README.md)
+- **Description**: Circuit topologies, electrical parameters, and configurations for synthetic load generation.
+- **Documentation**: See [`data_simulation/README.md`](data_simulation/README.md).
 
-**Simulated Load Topologies:**
+## 📋 Repository Structure
 
-![Load Topologies Overview](data_simulation/assets/Overview%20of%20simulated%20load%20topologies%20and%20number%20of%20cases.jpg)
+```text
+An-Analytical-Federated-Learning-Method-for-Scalable-NILM/
+|-- analytical_nilm/                # Core Python method implementation and toy demos
+|   |-- pretrain/                   # Shared feature extractor and CE + SCL pretraining
+|   |-- federated/                  # Analytical local update and cloud aggregation
+|   |-- configs/                    # Toy pretraining and federated configs
+|   |-- examples/                   # Synthetic-data demos
+|   `-- outputs/                    # Runtime outputs ignored except .gitkeep
+|-- stm32_deployment/
+|   |-- embedded_method/            # Method-level STM32 C implementation
+|   |-- stm32_monitoring_platform/  # Web-based FL coordination platform
+|   `-- assets/                     # Demo videos and screenshots
+|-- data_simulation/                # Simulation parameters and load topologies
+|   |-- simulation_load_parameters.pdf
+|   |-- simulation_load_parameters.xlsx
+|   `-- assets/                     # Circuit topology diagrams
+|-- LICENSE
+`-- README.md
+```
 
+## 🚀 Quick Start
 
-## ⏳ Full Code Release Plan
+### 🧪 Python Method Demos
 
-Upon paper acceptance, this repository will be updated with the following components:
+See [`analytical_nilm/README.md`](analytical_nilm/README.md) for the pretraining and analytical federated learning toy demos.
 
-### 1. **Analytical Federated Learning Framework**
-- Closed-form solution for local updates
-- Gram matrix computation algorithms
-- Cloud-side aggregation procedures
+### 🔧 STM32 Embedded Method
 
-### 2. **Pre-trained Shared Feature Extractor**
-- Model architecture and weights
-- Training scripts
+See [`stm32_deployment/embedded_method/README.md`](stm32_deployment/embedded_method/README.md) for the method-level C implementation, public API, parameter template, and integration notes.
 
-### 3. **STM32 Embedded Firmware** 
-- C implementation optimized for embedded systems
-- Memory-efficient matrix operations
-- Binary communication protocol
-- Complete build and deployment guides
+### 🖥️ Monitoring Platform
 
-**Timeline**: Full code release will occur immediately upon paper acceptance notification.
+```bash
+cd stm32_deployment/stm32_monitoring_platform
+pip install -r requirements.txt
+```
 
-**Star this repository** ⭐ to receive notifications when the complete implementation is released!
+On Windows, launch the platform by double-clicking `open_platform .bat`.
+
+## 🛠️ Remaining Release Plan
+
+The repository already includes the core Python method implementation and the method-level STM32 C implementation. Future updates may focus on documentation and integration notes, such as:
+
+- Additional usage notes for the released Python implementation.
+- More detailed explanations of the pretraining and analytical federated learning demos.
+- Additional notes for adapting the method-level C implementation to specific boards.
+- More detailed examples for exporting parameters from PyTorch checkpoints.
+- Optional guidance for integrating CMSIS-DSP and board-specific memory allocators.
+
+The release will remain method-focused. Raw data, private data splits, baseline implementations, full experiment reproduction scripts, paper-table reproduction commands, real deployment weights, and complete product firmware are not included.
 
 ## 📄 Citation
 
@@ -138,57 +135,36 @@ If you use this work in your research, please cite:
 
 ```bibtex
 @article{guo2026analytical,
-  title={An Analytical Federated Learning Framework for Scalable Non-Intrusive Load Monitoring},
-  author={Wenlong Guo, Qingquan Luo, Tao Yu, Xiaolei Hu, Yufeng Wu, and Zhenning Pan},
-  journal={Under Review},
-  year={2026}
+  title={An Analytical Federated Learning Method for Scalable Non-Intrusive Load Monitoring},
+  author={Wenlong Guo and Tao Yu and Qingquan Luo and Xiaolei Hu and Yufeng Wu and Zhenning Pan},
+  journal={IEEE Transactions on Instrumentation and Measurement},
+  year={2026},
+  pages={1--1},
+  doi={10.1109/TIM.2026.3704092},
+  note={Early Access, published June 16, 2026}
 }
 ```
 
-**Note**: Citation will be updated with journal information after paper acceptance.
+The paper is available as an IEEE Early Access article in IEEE Transactions on Instrumentation and Measurement.
 
-## 🎯 Quick Start
+## 🙏 Acknowledgments
 
-### For Platform Users (Available Now)
-
-1. **Navigate to the monitoring platform**:
-   ```bash
-   cd stm32_deployment/stm32_monitoring_platform
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. **Launch the platform**:
-   - **Windows**: Double-click `open_platform .bat`
-
-
-4. **Try simulation mode** (no hardware needed):
-   - Select "Simulation Test" in the platform interface
-   - Configure virtual clients and start training
-
-See [Platform Documentation](stm32_deployment/stm32_monitoring_platform/readme.md) for detailed usage instructions.
+This repository implements the method proposed in our NILM paper. Our work was informed by prior research on analytical federated learning, including the public AFL implementation by He et al. We thank the authors of [`ZHUANGHP/Analytic-federated-learning`](https://github.com/ZHUANGHP/Analytic-federated-learning) for releasing their code. In this repository, we re-derive a more compact analytical federated learning formulation for scalable NILM, substantially improving cloud-side aggregation efficiency and making the method better suited to large-scale deployment. The release also includes a patch-residual waveform feature extractor, NILM-specific pretraining, projection-branch analytical update, synthetic demos, and STM32-side method implementation.
 
 ## 📧 Contact
 
 - **Repository**: [GitHub - Analytical Federated Learning for Scalable NILM](https://github.com/2771618309/An-Analytical-Federated-Learning-Method-for-Scalable-NILM)
-- **Issues**: For technical questions about the available supplementary materials, please open an [issue](https://github.com/2771618309/An-Analytical-Federated-Learning-Method-for-Scalable-NILM/issues)
+- **Issues**: For technical questions about the available materials, please open an [issue](https://github.com/2771618309/An-Analytical-Federated-Learning-Method-for-Scalable-NILM/issues).
 - **Email**: 2771618309@qq.com
-
-**Note**: We cannot provide early access to unreleased code components during the peer review period. Thank you for your understanding.
 
 ## 📜 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See [`LICENSE`](LICENSE) for details.
 
 ---
 
-**Repository Status**: Supplementary Materials (Pre-Acceptance)  
-**Last Updated**: February 2026  
-**Full Release**: Upon paper acceptance
+**Repository Status**: Method implementation and selected supplementary materials  
+**Last Updated**: June 2026  
+**Current Release Scope**: Core Python method implementation and method-level STM32 C implementation
 
-⭐ **Star this repository to get notified when the complete implementation is released!**
-
-
+⭐ **Star this repository to receive notifications when additional materials are released.**

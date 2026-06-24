@@ -22,7 +22,7 @@ The complete deployment demonstration showing hardware setup, dual-device traini
 - **Real-time Monitoring**: Visualizes training progress, communication status, and resource consumption
 - **Flexible Deployment**: Operates in both simulation mode (no hardware required) and real serial communication mode
 - **Bilingual Support**: User interface available in both English and Chinese
-- **Comprehensive Logging**: Automatic checkpoint saving and experimental data recording
+- **Local Runtime Outputs**: Optional checkpoint and result files generated during user-run experiments
 
 ### System Architecture
 
@@ -45,7 +45,7 @@ stm32_monitoring_platform/
 
 **Key Components:**
 - **stm32_dashboard.py**: Web-based monitoring interface (configuration, visualization, bilingual support)
-- **stm32_serial.py**: SLIP protocol, parameter exchange, dual-device scheduling, checkpoint management
+- **stm32_serial.py**: SLIP protocol, parameter exchange, dual-device scheduling, and local runtime checkpoint management
 - **open_platform .bat**: Launcher script (modify Python path for your environment)
 
 ## Requirements
@@ -240,9 +240,9 @@ These results demonstrate low resource consumption and suitability for large-sca
 
 ## Code Release Notice
 
-**Current Release:** Monitoring platform (frontend and coordination logic)
+**Current Release:** Monitoring platform, method-level STM32 C implementation, and Python analytical NILM method implementation.
 
-**Firmware Release:** STM32 firmware will be released after paper acceptance (contains core algorithm)
+The method-level STM32 C code is available in [`../embedded_method/`](../embedded_method/). This repository does not include a complete Keil/STM32CubeIDE project, company product code, private data, or real deployment model weights.
 
 ## Citation
 
@@ -250,14 +250,17 @@ If you use this platform in your research, please cite:
 
 ```bibtex
 @article{guo2026analytical,
-  title={An Analytical Federated Learning Framework for Scalable Non-Intrusive Load Monitoring},
-  author={Wenlong Guo, Qingquan Luo, Tao Yu, Xiaolei Hu, Yufeng Wu, and Zhenning Pan},
-  journal={TODO: Update journal name after acceptance},
-  year={2026}
+  title={An Analytical Federated Learning Method for Scalable Non-Intrusive Load Monitoring},
+  author={Wenlong Guo and Tao Yu and Qingquan Luo and Xiaolei Hu and Yufeng Wu and Zhenning Pan},
+  journal={IEEE Transactions on Instrumentation and Measurement},
+  year={2026},
+  pages={1--1},
+  doi={10.1109/TIM.2026.3704092},
+  note={Early Access, published June 16, 2026}
 }
 ```
 
-**Note:** Replace `journal` field with actual journal name after paper acceptance (e.g., "IEEE Transactions on Smart Grid").
+The paper is available as an IEEE Early Access article in IEEE Transactions on Instrumentation and Measurement.
 
 ## Contact
 

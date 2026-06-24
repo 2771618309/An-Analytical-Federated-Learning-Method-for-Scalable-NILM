@@ -1,0 +1,43 @@
+# Toy pretraining config. Field names follow the original config_pretrain.yaml
+# style where possible; private paths are replaced by repository-local paths.
+
+data_path: synthetic
+class_num: 6
+model_save_dir: analytical_nilm/outputs/pretrain/checkpoints
+model_name: patch_residual_toy.pth
+
+lr: 0.01
+base_lr: 0.001
+batch_size: 64
+verify_ratio: 0.2
+random: 42
+test_count: 1
+epoch: 3
+device: auto
+
+model_type: PatchResidualFeatureExtractor
+label_mapping_fig: false
+label_mapping: {}
+
+loss_type: SupConLoss
+temperature: 0.07
+
+# Toy-only parameters used to replace private NILM data in the demo.
+synthetic: true
+num_samples: 600
+length: 150
+noise_std: 0.03
+
+# Configurable version of constants in the original class_model_patch.
+patch_len: 30
+patch_stride: 30
+patch_embed_dim: 30
+out_channel: 8
+conv_out_channels: 4
+hidden_dim: 128
+dropout: 0.0
+input_norm: true
+feature_scale: false
+
+output_dir: analytical_nilm/outputs/pretrain
+save_metrics: true
