@@ -17,6 +17,12 @@ This repository provides the released method implementation and selected supplem
 
 The proposed method addresses the global-local bias issue in gradient-based federated NILM and provides an analytical federated learning pipeline with performance aligned with centralized learning.
 
+## 🧭 Method Overview
+
+![Overview of the proposed analytical federated learning method](assets/method_framework.jpg)
+
+**Figure:** Overview of the proposed analytical federated learning method for scalable NILM.
+
 ## ✅ Code Availability Statement
 
 This repository currently releases the **core method implementation** and selected supplementary materials.
